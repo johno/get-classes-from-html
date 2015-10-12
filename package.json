@@ -1,0 +1,32 @@
+{
+  "name": "get-classes-from-html",
+  "description": "Get classes from an HTML string",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/test.js | tap-dot",
+    "jshint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnotander/get-classes-from-html.git"
+  },
+  "keywords": [
+
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnotander/get-classes-from-html/issues"
+  },
+  "homepage": "https://github.com/johnotander/get-classes-from-html",
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "*",
+    "tap-dot": "*",
+    "standard": "*"
+  }
+}
