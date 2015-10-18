@@ -1,6 +1,6 @@
 {
   "name": "get-classes-from-html",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Get classes from an HTML string",
   "author": {
     "name": "John Otander",
