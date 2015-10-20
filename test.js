@@ -14,3 +14,9 @@ test('get-classes-from-html', t => {
     ['foo', 'bar', 'foobar', 'baz', 'another-class']
   )
 })
+
+test('handles no classes gracefully', t => {
+  t.plan(1)
+
+  t.same(getClassesFromHtml(''), [])
+})

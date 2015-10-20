@@ -6,7 +6,10 @@ module.exports = function getClassesFromHtml (html) {
   }
 
   var classes = []
-  html.match(/class=("([^"]*)")|class=('([^']*)')/ig).forEach(function (classString) {
+  var classMatches = html.match(/class=("([^"]*)")|class=('([^']*)')/ig)
+  classMatches = classMatches || []
+
+  classMatches.forEach(function (classString) {
     var classesFromString = classString.replace(/class=/i, '').replace(/'|"/g, '').match(/\S+/g)
     classes = classes.concat(classesFromString)
   })
